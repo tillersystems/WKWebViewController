@@ -562,6 +562,8 @@ fileprivate extension WKWebViewController {
         }
         
         let activityViewController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.barButtonItem = activityBarButtonItem
+
         present(activityViewController, animated: true, completion: nil)
     }
     
