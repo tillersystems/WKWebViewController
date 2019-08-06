@@ -97,7 +97,7 @@ open class WKWebViewController: UIViewController {
     open var stopBarButtonItemImage: UIImage?
     open var activityBarButtonItemImage: UIImage?
 
-    fileprivate var webView: WKWebView?
+    open var webView: WKWebView?
     fileprivate var progressView: UIProgressView?
     
     fileprivate var previousNavigationBarState: (tintColor: UIColor, hidden: Bool) = (.black, false)
