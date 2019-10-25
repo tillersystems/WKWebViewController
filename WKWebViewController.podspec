@@ -1,18 +1,24 @@
 Pod::Spec.new do |s|
   s.name             = 'WKWebViewController'
-  s.version          = "1.3.1"
+  s.module_name      = 'WKWebViewController'
+  s.version          = "1.3.2"
+
   s.summary          = "An UIViewController with WKWebView inside."
+  s.description      = "WKWebViewController is an UIViewController with WKWebView inside."
+
+  s.author           = 'Elias Abel'
+  s.social_media_url = 'https://meniny.cn/'
   s.homepage         = "https://github.com/Meniny/WKWebViewController"
   s.license          = { :type => "MIT", :file => "LICENSE.md" }
-  s.author           = 'Elias Abel'
-  s.source           = { :git => "https://github.com/Meniny/WKWebViewController.git", :tag => s.version.to_s }
-  s.swift_version    = "5"
-  s.social_media_url = 'https://meniny.cn/'
+
+  s.requires_arc     = true
+  s.swift_version = ['4.2', '5.0']
+  s.ios.deployment_target = "9.0"
+
   s.source_files     = "WKWebViewController/**/*.swift"
   s.resources        = "WKWebViewController/Assets.xcassets"
-  s.requires_arc     = true
-  s.ios.deployment_target = "9.0"
+  s.source           = { :git => "https://github.com/Meniny/WKWebViewController.git", :tag => s.version.to_s }
+
   s.dependency         "JustLayout"
-  s.description      = "WKWebViewController is an UIViewController with WKWebView inside."
-  s.module_name      = 'WKWebViewController'
+
 end
