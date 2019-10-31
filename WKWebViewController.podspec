@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WKWebViewController'
   s.module_name      = 'WKWebViewController'
-  s.version          = "1.3.2"
+  s.version          = "1.4.0"
 
   s.summary          = "An UIViewController with WKWebView inside."
   s.description      = "WKWebViewController is an UIViewController with WKWebView inside."
