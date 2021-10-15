@@ -1,7 +1,0 @@
-platform :ios, '9.0'
-
-target 'Sample' do
-  use_frameworks!
-  pod 'WKWebViewController', :path => '../'
-
-end
